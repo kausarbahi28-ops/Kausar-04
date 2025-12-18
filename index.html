@@ -1,22 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <title>My First Website</title>
-</head><style>
-body {
-    background-color: #f2f2f2;
-    text-align: center;
-    font-family: Arial;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreePix Gallery</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f5f5;
+    }
+    header{
+      background:#ffffff;
+      padding:15px;
+      text-align:center;
+      font-size:24px;
+      font-weight:bold;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap:15px;
+      padding:15px;
+    }}
+
+}
+.card{
+  background:#fff;
+  margin-bottom:15px;
+  border-radius:10px;
+  overflow:hidden;
+  display:inline-block;
+  width:100%;
+}
+.card img{
+  width:100%;
+  display:block;
+}
+.card .info{
+  padding:10px;
+  text-align:center;
+}
+.download{
+  display:inline-block;
+  margin-top:8px;
+  padding:8px 12px;
+  background:#e60023;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:14px;
 }
 
-h1 {
-    color: blue;
-}
-</style>
-<body>
-
-<h1>Welcome to My Website</h1>
-<p>এই ওয়েবসাইটটি মোবাইল দিয়ে বানানো হয়েছে।</p>
-
-</body>
+  </style>
+</head>
+<body><header>FreePix – Copyright Free Images</header><div class="grid">
+  <div class="card">
+    <img src="https://picsum.photos/400/600?random=1" alt="free image">
+    <div class="info">
+      <p>Nature Image</p>
+      <a class="download" href="https://picsum.photos/1200/1800?random=1" download>Download</a>
+    </div>
+  </div>  <div class="card">
+    <img src="https://picsum.photos/400/500?random=2" alt="free image">
+    <div class="info">
+      <p>Abstract Image</p>
+      <a class="download" href="https://picsum.photos/1200/1600?random=2" download>Download</a>
+    </div>
+  </div>  <div class="card">
+    <img src="https://picsum.photos/400/700?random=3" alt="free image">
+    <div class="info">
+      <p>City Image</p>
+      <a class="download" href="https://picsum.photos/1200/2000?random=3" download>Download</a>
+    </div>
+  </div>
+</div></body>
 </html>
